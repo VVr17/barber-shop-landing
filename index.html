@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barber Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a class="logo" href="./index.html" aria-label="логотип сайти barbershop">
+        <svg width="68.93" height="55.46">
+          <use href="./images/icons.svg#icon-Logo"></use>
+        </svg>
+      </a>
+      <!-- aria-label="логотип сайти barbershop" - для озвучки ассистивных 
+      технологий логотипа - так как будет только картинка без описания -->
+      <nav class="navigation">
+        <ul class="list nav-list">
+          <li class="nav-item"><a href="" class="link nav-link">О нас</a></li>
+          <li class="nav-item"><a href="" class="link nav-link">Услуги и цены</a></li>
+          <li class="nav-item"><a href="" class="link nav-link">Мастера</a></li>
+          <li class="nav-item"><a href="" class="link nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-group">
+        <a class="link header-phone" href="tel:380441111111"> +38 044 111 11 11</a>
+        <button class="button button-mode-dark" type="button">онлайн-запись</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- секция Герой -->
+    <section class="hero">
+      <div class="container">
+        <ul class="list social-list">
+          <li class="hero-item"> <a class="link social-link" href="https://www.instagram.com/" target="_blank"
+              rel="noopener noreferrer">Instagram</a></li>
+          <li class="hero-item"> <a class="link social-link" href="htts://www.youtube.com" target="_blank"
+              rel="noopener noreferrer">YouTube</a></li>
+        </ul>
+
+        <div class="hero-container">
+          <div class="hero-group">
+            <p class="uppertitle">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="subtitle">We are experts in trendy men's haircuts.<br>
+              We work quickly, carefully, and tastefully.</p>
+          </div>
+
+          <ul class="list slider-btn-list">
+            <li>
+              <button class="slider-btn disable btn-back" type="button">Назад</button>
+            </li>
+            <li>
+              <button class="slider-btn" type="button">Вперед</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- секция поро нас -->
+    <section class="section about">
+      <div class="container about-container">
+        <ul class="list about-list">
+          <li class="about-item">
+            <img class="image" src="./images/about/about-1.jpg" alt="бритье бороды" width="270" height="445">
+          </li>
+          <li class="about-item">
+            <img class="image" src="./images/about/about-2.jpg" alt="бритье опасной бритвой" width="270" height="445">
+          </li>
+        </ul>
+
+        <div class="about-group">
+          <p class="uppertitle dark">О НАС</p>
+          <h2 class="section-title">Лучший Барбершоп твоего города</h2>
+          <p class="subtitle dark">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+          <p class="description-about">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен.
+            И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним.
+            Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы
+            всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+          <button class="button button-mode-light" type="button">онлайн-запись</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- услуги и цены -->
+    <section class="section price">
+      <div class="container price-container">
+        <p class="uppertitle">Проведи время в компании лучших мастеров</p>
+        <h2 class="section-title price-title">Услуги и цены</h2>
+        <ul class="list price-list">
+          <li class="item">
+            <ul class="price-inner-list list">
+              <li class="inner-item-price">Мужская стрижка от 300 грн.</li>
+              <li class="inner-item-price">Стрижка бороды от 200 грн.</li>
+              <li class="inner-item-price">Стрижка усов от 200 грн.</li>
+              <li class="inner-item-price">Бритье опасной бритвой от 200 грн.</li>
+            </ul>
+          </li>
+          <li class="item">
+            <ul class="price-inner-list list">
+              <li class="inner-item-price">Cтрижка у стажера от 50 грн.</li>
+              <li class="inner-item-price">Стрижка под насадку от 200 грн.</li>
+              <li class="inner-item-price">Детская стрижка (до 12 лет) от 300 грн.</li>
+              <li class="inner-item-price">Камуфлирование седины от 200 грн.</li>
+            </ul>
+          </li>
+        </ul>
+        <button class="button button-mode-dark" type="button" clas="btn">онлайн-запись</button>
+      </div>
+    </section>
+
+    <!-- преимущества -->
+    <section class="section benefits">
+      <div class="container">
+        <ul class="list benefits-list">
+          <li class="benefits-item">
+            <div class="benefits-text-container">
+              <p class="benefits-ammount">600 <sup class="sign">+</sup></p>
+              <p class="benefits-text">Довольных клиентов в день</p>
+            </div>
+          </li>
+          <li class="benefits-item">
+            <div class="benefits-text-container">
+              <p class="benefits-ammount">20 <sup class="sign">+</sup></p>
+              <p class="benefits-text">Лучших мастеров Киева</p>
+            </div>
+          </li>
+          <li class="benefits-item">
+            <div class="benefits-text-container">
+              <p class="benefits-ammount">50 <sup class="sign">+</sup></p>
+              <p class="benefits-text">Наград за отличный сервис</p>
+            </div>
+          </li>
+          <li class="benefits-item">
+            <div class="benefits-text-container">
+              <p class="benefits-ammount">100 <sup class="sign">+</sup></p>
+              <p class="benefits-text">Подарков постоянным клиентам</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="benefits-group">
+          <p class="uppertitle dark">старая традиционная школа</p>
+          <h2 class="section-title">Почему приходят именно к нам?</h2>
+          <p class="subtitle dark">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз
+            прочитать.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- мастера - наша команда -->
+    <section class="section team">
+      <div class="container">
+        <p class="uppertitle dark"> для настоящих ценителей атмосферы</p>
+        <h2 class="section-title team-title">Наши мастера</h2>
+        <ul class="member-list list">
+          <li class="member-item">
+            <img class="image member-img" src="./images/team/team-1.jpg" alt="фото мастера" class="member-img"
+              width="370" height="346">
+            <div class="member-group">
+              <h3 class="member-title">John Smith</h3>
+              <p class="member-position">Extreme Barber</p>
+              <ul class="socials list">
+                <li class="socials-item">
+                  <a href="" class="social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="ссылка на Инстаграм">
+                    <svg class="social-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a href="" class="social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="ссылка на Твиттер">
+                    <svg class="social-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a href="" class="social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="ссылка на Фейсбук">
+                    <svg class="social-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a href="" class="social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="ссылка на LinkedIn">
+                    <svg class="social-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="member-item">
+            <img class="image member-img" src="./images/team/team-2.jpg" alt="фото мастера" class="member-img"
+              width="370" height="346">
+            <div class="member-group">
+              <h3 class="member-title">Michele Doe</h3>
+              <p class="member-position">Extreme Barber</p>
+              <ul class="socials list">
+                <li class="socials-item">
+                  <a href="" class="social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="ссылка на Инстаграм">
+                    <svg class="social-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a href="" class="social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="ссылка на Твиттер">
+                    <svg class="social-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a href="" class="social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="ссылка на Фейсбук">
+                    <svg class="social-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a href="" class="social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="ссылка на LinkedIn">
+                    <svg class="social-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="member-item">
+            <img class="image member-img" src="./images/team/team-3.jpg" alt="фото мастера" class="member-img"
+              width="370" height="346">
+            <div class="member-group">
+              <h3 class="member-title">Alan Black</h3>
+              <p class="member-position">Extreme Barber</p>
+              <ul class="socials list">
+                <li class="socials-item">
+                  <a href="" class="social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="ссылка на Инстаграм">
+                    <svg class="social-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a href="" class="social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="ссылка на Твиттер">
+                    <svg class="social-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a href="" class="social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="ссылка на Фейсбук">
+                    <svg class="social-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a href="" class="social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="ссылка на LinkedIn">
+                    <svg class="social-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- галлерея работ -->
+    <section class="section gallery">
+      <div class="container">
+        <p class="uppertitle dark">На латинском языке “барба” означает “борода”</p>
+        <h2 class="section-title visually-hidden">галлерея работ</h2>
+        <ul class="list gallery">
+          <li class="gallery-item">
+            <img class="gallery-img" src="./images/gallery/gallery-1.jpg" alt="работа мастера - стрижка" width="270"
+              height="360">
+          </li>
+          <li class="gallery-item">
+            <img class="gallery-img" src="./images/gallery/gallery-2.jpg" alt="работа мастера - бритье" width="270"
+              height="360">
+          </li>
+          <li class="gallery-item">
+            <img class="gallery-img" src="./images/gallery/gallery-3.jpg" alt="работа мастера - бритье" width="270"
+              height="360">
+          </li>
+          <li class="gallery-item">
+            <img class="gallery-img" src="./images/gallery/gallery-4.jpg" alt="работа мастера бритвой" width="270"
+              height="360">
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- подвал сайта -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="copyright">&#169; Copyright 2020</p>
+      <ul class="list footer-socials-list">
+        <li class="socials-item"> <a class="link social-link" href="https://www.instagram.com/" target="_blank"
+            rel="noopener noreferrer">Instagram</a>
+        </li>
+        <li class="socials-item"> <a class="link social-link" href="htts://www.youtube.com" target="_blank"
+            rel="noopener noreferrer">YouTube</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>
