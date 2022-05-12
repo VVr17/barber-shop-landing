@@ -4,23 +4,27 @@
 
   --main-text-color: #555555;
   --secondary-text-color:#303030;
+  --third-color: #9DA4BD;
   
   --bg-color:#F7F7F7;
   --secondary-bg-color:rgba(157, 164, 189, 0.6);
   --hero-bg-color:rgba(25, 28, 38, 0.2);
-
   --price-list-bg-color:#111319;
+  --contacts-bg-color: #191C26;
+
   --price-list-gradient-first: #171A24;
   --price-list-gradient-second: rgba(23, 26, 36, 0.2);
   --price-list-gradient-third: #090B13;
   --price-list-gradient-forth: rgba(9, 11, 19, 0.2);
 
-  --third-color:#9DA4BD;
-  --contacts-bg-color:#191C26;
 
   --main-font: 'Open Sans';
   --secondary-font: 'Raleway';
 
+  /* переменные grid items */
+  --items: 1;
+  --indent: 30px; 
+  /* отступ-margin */
 }
 
 body {
@@ -119,8 +123,6 @@ ul {
 
 .about-container,
 .nav-list,
-.gallery,
-.member-list,
 .benefits .container {
   display: flex;
   flex-wrap: wrap;
@@ -131,23 +133,21 @@ ul {
   padding-bottom: 130px;
 }
 
-/* проверить корректность сетки */
-/* .grip {
+/* общая базовая сетка для коллекций*/
+.grid {
   display: flex;
   flex-wrap: wrap;
-
-  gap: var (--indent);
+  gap: var(--indent);
 }
 
 .grid-item {
-  flex-basis: calc((100%-var(--indent)*(var(--items)-1)));
-} */
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
 
 
 /* Header */
 .header {
   background-color: teal;
-  /* position: absolute; */
 }
 
 .header-container, 
@@ -207,7 +207,6 @@ ul {
   margin: auto;
   background-color: var(--hero-bg-color);
   background-image: url(../images/hero/slider-overlay.png), url(../images/hero/slider-img-3.jpg),url(../images/hero/slider-img-2.jpg), url(../images/hero/slider-img-1.jpg);
-  /* linear-gradient(to right, var(--hero-bg-color), var(--hero-bg-color)) */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -359,15 +358,14 @@ padding-right: 525px;
 }
 
 /* Sections */
-
 .section-title {
   margin-bottom: 20px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
-  
   color: var(--secondary-text-color);
 }
 
@@ -378,12 +376,11 @@ padding-right: 525px;
 }
 
 .about-list {
-  display: flex;
   margin-right: 64px;
 }
 
-.about-item:not(:last-child) {
-  margin-right: 30px;
+.about-item {
+  --items: 2;
 }
 
 .about-group .subtitle {
@@ -399,6 +396,7 @@ padding-right: 525px;
 .price {
   max-width: 1280px;
   margin: auto;
+
   background-color: var(--price-list-bg-color);
   background-image: url(../images/price/bg-price.png);
   background-position: center;
@@ -413,6 +411,7 @@ padding-right: 525px;
 .price-title {
   margin-bottom: 44px;
   text-align: left;
+
   color: var(--white-color);
 }
 
@@ -422,8 +421,8 @@ padding-right: 525px;
 
 .price-list {
   display: flex;
-  text-align: left;
   margin-bottom: 50px;
+  text-align: left;
 }
 
 .price-list .item.first {
@@ -439,7 +438,7 @@ padding-right: 525px;
   padding-right: 40px;
   padding-top: 30px;
   padding-bottom: 30px;
-  width: 585px;
+  flex-basis: calc(100% / 2);
 }
 
 .inner-item-price:not(:last-child) {
@@ -455,6 +454,7 @@ padding-right: 525px;
 
 /* benefits */
 
+
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
@@ -468,10 +468,13 @@ padding-right: 525px;
   margin-right: 30px;
   margin-bottom: 30px;
   padding: 20px 24px;
-  width: 170px;
-  height: 133px;
+  flex-basis: calc((100% - 30px) / 2);
   background-color: var(--bg-color);
   text-align: center;
+}
+
+.benefits-item:last-child {
+  padding: 20px;
 }
 
 .benefits-item:nth-child(2n) {
@@ -488,11 +491,11 @@ padding-right: 525px;
 
 .benefits-ammount {
   margin-bottom: 6px;
+
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   letter-spacing: 0.05em;
-  
   color: var(--secondary-text-color);
 }
 
@@ -520,11 +523,8 @@ padding-right: 525px;
 }
 
 .member-item {
-margin-right: 30px;  
-}
-
-.member-item:nth-child(3n) {
-  margin-right: 0;
+  --items: 3;
+  /* переназначить количество карточек*/
 }
 
 .member-img {
@@ -537,15 +537,16 @@ margin-right: 30px;
 
 .member-title {
   margin-bottom: 8px;
+
   font-size: 18px;
   line-height: 1.39;
   text-align: center;
-
   color: var(--secondary-text-color)
 }
 
 .member-position {
   margin-bottom: 30px;
+  
   line-height: 1.36;
   text-align: center;
   color: var(--brand-color);
@@ -567,6 +568,7 @@ margin-right: 30px;
   align-items: center;
   width: 44px;
   height: 44px;
+  
   background-color: var(--white-color);
   border-radius: 50%;
   color: var(--secondary-text-color);
@@ -581,18 +583,20 @@ margin-right: 30px;
  fill: var(--brand-color); 
 }
 
-/* gallery */
+/* *todo gallery */
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; 
+  /*работает как margin right/bottom - делает отступы только в средине контейнера, 
+  то есть только между элементами, не нужно обнулять маржины + 
+  автоматически при переносе карточек на другую строку делает 
+  правый +нижний отступы */
+}
 
 .gallery .uppertitle {
   margin-bottom: 44px;
-}
-
-.gallery-item {
-  margin-right: 30px;
-}
-
-.gallery-item:nth-child(4n) {
-  margin-right: 0;
 }
 
 .section.contacts {
@@ -644,6 +648,16 @@ margin-right: 30px;
   margin-bottom: 20px;
 }
 
+.contacts-list .link {
+  display: flex;
+  align-items: center;
+
+}
+
+.contacts-list .icon {
+  margin-right: 16px;
+}
+
 .work-hours {
   display: flex;
   align-items: center;
@@ -690,3 +704,48 @@ margin-right: 30px;
 .footer-socials-list .socials-item:not(:last-child) {
   margin-right: 40px;
 }
+
+
+/* *todo Анимация выезжающие иконки для кнопки*/
+/* .test-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.test-btn::before,
+.test-btn::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  transition: transform 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+.test-btn::before {
+  margin-right: 10px;
+  background-image: url(../images/icons/options.svg);
+}
+
+.test-btn:hover::before {
+  transform: translateY(calc(-100% - 15px));
+}
+
+.test-btn::after {
+  position: absolute;
+  top: 12px;
+  
+  background-image: url(../images/icons/note-pen.svg);
+  transform: translateY(calc(100% + 15px));
+
+}
+
+.test-btn:hover::after {
+  transform: translateY(0);
+} */
