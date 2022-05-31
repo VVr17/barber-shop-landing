@@ -1,0 +1,25 @@
+/* ABOUT */
+.about__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__list {
+  margin-right: 64px;
+}
+
+.about__item {
+  --items: 2;
+}
+
+.about__group {
+  width: 480px;
+}
+
+.about__subtitle {
+  margin-bottom: 20px;
+}
+
+.about__description {
+  margin-bottom: 40px;
+}

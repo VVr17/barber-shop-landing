@@ -1,0 +1,30 @@
+/* MEMBER_SOCIALS */
+.member-socials {
+  display: flex;
+  justify-content: center;
+}
+
+.member-socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.member-socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--white-color);
+  border-radius: 50%;
+  color: var(--secondary-text-color);
+
+  &:hover,
+  &:focus {
+      color: var(--brand-color);
+    }
+}
+
+.member-socials__logo {
+  fill: currentColor;
+}

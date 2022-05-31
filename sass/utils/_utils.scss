@@ -1,0 +1,15 @@
+.link {
+  text-decoration: none;
+  color: currentColor;
+  transition: color 250ms ease-in;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

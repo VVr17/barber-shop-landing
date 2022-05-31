@@ -1,0 +1,49 @@
+/* GALLERY */
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  // gap - работает как margin right/bottom - делает отступы только в средине контейнера, 
+  // то есть только между элементами, не нужно обнулять маржины + 
+  // автоматически при переносе карточек на другую строку делает 
+  // правый +нижний отступы 
+}
+
+.gallery__uppertitle {
+  margin-bottom: 44px;
+}
+
+.gallery__item {
+  position: relative;
+  overflow: hidden;
+
+  transform: scale(1);
+  transition: transform 250ms ease-in;
+
+  &:hover {
+      transform: scale(1.1);
+    }
+}
+
+.gallery__item::before,
+.gallery__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(93, 92, 92, 0.8);
+}
+
+.gallery__item::before {
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg) translate(-100px, -90px);
+}
+
+.gallery__item::after {
+  bottom: 0;
+  right: 0;
+  transform: rotate(-45deg) translate(100px, 90px);
+}

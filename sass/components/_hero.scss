@@ -1,0 +1,63 @@
+/* HERO */
+
+.hero {
+  max-width: 1280px;
+  min-height: 680px;
+  margin: auto;
+  background-color: var(--hero-bg-color);
+
+  background-image: url(../images/hero/slider-overlay.png),
+    url(../images/hero/slider-img-3.jpg),
+    url(../images/hero/slider-img-2.jpg),
+    url(../images/hero/slider-img-1.jpg),
+    linear-gradient(to right, var(--white-color) 12%, var(--hero-bg-color) 12%);
+  background-size: 1125px 680px,
+    1125px 680px,
+    1125px 680px,
+    1125px 680px,
+    contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+}
+
+.hero__left-side {
+  display: flex;
+  align-items: flex-end;
+  width: 100px;
+}
+
+.hero__group {
+  flex-grow: 1;
+  display: block;
+  margin-bottom: 206px;
+  margin-top: 272px;
+  margin-left: 100px;
+  animation: fade-left-to-right 2s ease;
+}
+
+@keyframes fade-left-to-right {
+  0% {
+    transform: translateX(-250px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  font-family: var(--secondary-font), sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}

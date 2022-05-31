@@ -1,0 +1,14 @@
+/* LOGO */
+.logo {
+  margin-right: 71px;
+  color: var(--secondary-text-color);
+
+  &:hover,
+  &:focus {
+      color: var(--brand-color);
+    }
+}
+
+.logo__icon {
+  fill: currentColor;
+}
