@@ -1,0 +1,12 @@
+.subtitle {
+	font-size: 18px;
+	line-height: 1.67;
+
+	&--light-mode {
+		color: var(--main-text-color);
+	}
+
+	&--dark-mode {
+		color: var(--third-color);
+	}
+}

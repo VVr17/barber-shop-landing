@@ -1,0 +1,11 @@
+@mixin fonts($fw, $fs, $fh, $ls, $tt: false) {
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $fh;
+	letter-spacing: $ls;
+	text-transform: $tt;
+
+	@if $tt {
+		text-transform: $tt;
+	}
+}

@@ -1,0 +1,11 @@
+@keyframes fade-left-to-right {
+	0% {
+		transform: translateX(-250px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}

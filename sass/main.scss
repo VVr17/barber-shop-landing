@@ -1,24 +1,30 @@
 @import "./utils/variables";
-@import "./components/global";
 @import "./utils/visually-hidden";
-@import "./utils/utils";
-@import "./utils/container";
-@import "./components/section";
-@import "./utils/grid";
+@import "./utils/mixin";
+
+@import "./base/reset";
+@import "./base/common";
+@import "./base/grid";
+@import "./base/container";
+@import "./base/animation";
+
 @import "./components/button";
-@import "./components/header";
 @import "./components/logo";
-@import "./components/navigation";
-@import "./components/hero";
 @import "./components/socials";
-@import "./components/upper-subtitle";
-@import "./components/slider";
-@import "./components/about";
-@import "./components/price";
-@import "./components/benefits";
-@import "./components/team";
 @import "./components/member-socials";
-@import "./components/gallery";
-@import "./components/contacts";
+@import "./components/navigation";
+@import "./components/uppertitle";
+@import "./components/subtitle";
+@import "./components/slider/module";
 @import "./components/form";
-@import "./components/footer";
+
+@import "./layouts/section";
+@import "./layouts/about";
+@import "./layouts/benefits";
+@import "./layouts/gallery";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/price";
+@import "./layouts/team";
+@import "./layouts/contacts";
+@import "./layouts/footer";

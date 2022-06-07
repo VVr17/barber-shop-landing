@@ -1,0 +1,37 @@
+/* TITLE */
+.uppertitle {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+
+	// font-weight: 600;
+	// font-size: 11px;
+	// line-height: 1.36;
+	// letter-spacing: 0.1em;
+	// text-transform: uppercase;
+	@include fonts(600, 11px, 1.36, 0.1em, uppercase);
+
+	&--dark-mode {
+		color: var(--secondary-bg-color);
+	}
+
+	&--light-mode {
+		color: var(--secondary-text-color);
+	}
+}
+
+.uppertitle::before {
+	content: "";
+	display: block;
+	margin-right: 20px;
+	width: 60px;
+	height: 1px;
+}
+
+.uppertitle--dark-mode::before {
+	background-color: var(--secondary-bg-color);
+}
+
+.uppertitle--light-mode::before {
+	background-color: var(--secondary-text-color);
+}
