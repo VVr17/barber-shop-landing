@@ -89,10 +89,12 @@
       <div class="container about__container">
         <ul class="list about__list grid">
           <li class="about__item grid__item">
-            <img class="image" src="./images/about/about-1.jpg" alt="бритье бороды" width="270" height="445">
+            <img class="image about__image" src="./images/about/about-1.jpg" alt="бритье бороды" width="270"
+              height="445">
           </li>
           <li class="about__item grid__item">
-            <img class="image" src="./images/about/about-2.jpg" alt="бритье опасной бритвой" width="270" height="445">
+            <img class="image about__image" src="./images/about/about-2.jpg" alt="бритье опасной бритвой" width="270"
+              height="445">
           </li>
         </ul>
         <div class="about__group">
@@ -141,6 +143,14 @@
     <!-- преимущества -->
     <section class="section benefits">
       <div class="container grid benefits__container">
+        <div class="benefits__group">
+          <p class="uppertitle uppertitle--light-mode">старая традиционная школа</p>
+          <h2 class="section__title section__title--light-mode">Почему приходят именно к нам?</h2>
+          <p class="subtitle subtitle--light-mode">О нас говорят только хорошее. Но лучше 1 раз увидеть и
+            прочувствовать, чем 10 раз прочитать.
+          </p>
+        </div>
+
         <ul class="list benefits__list">
           <li class="benefits__item">
             <div class="benefits__text-container">
@@ -167,16 +177,6 @@
             </div>
           </li>
         </ul>
-
-        <div class="benefits__group">
-          <p class="uppertitle uppertitle--light-mode">старая традиционная школа</p>
-          <h2 class="section__title section__title--light-mode">Почему приходят именно к нам?</h2>
-          <p class="subtitle subtitle--light-mode">О нас говорят только хорошее. Но лучше 1 раз увидеть и
-            прочувствовать,
-            чем 10 раз
-            прочитать.
-          </p>
-        </div>
       </div>
     </section>
 
@@ -323,20 +323,20 @@
         <h2 class="section__title visually-hidden">галлерея работ</h2>
         <ul class="list gallery__list">
           <li class="gallery__item">
-            <img class="image" src="./images/gallery/gallery-1.jpg" alt="работа мастера - стрижка" width="270"
-              height="360">
+            <img class="image gallery__image" src="./images/gallery/gallery-1.jpg" alt="работа мастера - стрижка"
+              width="270" height="360">
           </li>
           <li class="gallery__item">
-            <img class="image" src="./images/gallery/gallery-2.jpg" alt="работа мастера - бритье" width="270"
-              height="360">
+            <img class="image gallery__image" src="./images/gallery/gallery-2.jpg" alt="работа мастера - бритье"
+              width="270" height="360">
           </li>
           <li class="gallery__item">
-            <img class="image" src="./images/gallery/gallery-3.jpg" alt="работа мастера - бритье" width="270"
-              height="360">
+            <img class="image gallery__image" src="./images/gallery/gallery-3.jpg" alt="работа мастера - бритье"
+              width="270" height="360">
           </li>
           <li class="gallery__item">
-            <img class="image" src="./images/gallery/gallery-4.jpg" alt="работа мастера бритвой" width="270"
-              height="360">
+            <img class="image gallery__image" src="./images/gallery/gallery-4.jpg" alt="работа мастера бритвой"
+              width="270" height="360">
           </li>
         </ul>
       </div>
@@ -347,7 +347,8 @@
       <div class="container contacts__container">
 
         <div class="contacts__left-side">
-          <h2 class="section__title section__title--dark-mode contacts__title--left-side">Онлайн-запись</h2>
+          <h2 class="section__title section__title--dark-mode contacts__title--left-side contacts__title">Онлайн-запись
+          </h2>
           <form class="form" method="post">
             <div class="form__wrapper">
               <label class="form__group">
@@ -363,37 +364,41 @@
               <textarea class="form__input form__input--message" name="user-message" rows=5" placeholder=" "></textarea>
               <span class="form__label">сообщение</span>
             </label>
-            <button class="button button--mode-dark" type="submit">отправить</button>
+            <button class="button button--mode-dark form__button" type="submit">отправить</button>
           </form>
         </div>
 
         <div class="contacts__right-side">
-          <h2 class="section__title section__title--dark-mode contacts__title--right-side">Контакты</h2>
-          <ul class="list contacts__list">
-            <li class="contacts__item">
-              <a class="contacts__link link" href="">
-                <svg class="contacts__icon" width="24px" height="24px" transform="translate(1 4)">
-                  <use href="./images/icons/icons.svg#icon-map-pin"></use>
-                </svg>
-                ул. Васильковая, 7А <br> Киев, 08132</a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link link" href="tel:+380441111111">
-                <svg class="contacts__icon" width="24px" height="24px">
-                  <use href="./images/icons/icons.svg#icon-phone"></use>
-                </svg>
-                +38 044 111 11 11</a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link link" href="mailto:barbershop@email.com">
-                <svg class="contacts__icon" width="24px" height="24px">
-                  <use href="./images/icons/icons.svg#icon-mail"></use>
-                </svg>
-                barbershop@email.com</a>
-            </li>
-          </ul>
-          <h3 class="contacts__work-hours">время работы</h3>
-          <p>Ежедневно с 9:00 до 22:00</p>
+          <h2 class="section__title section__title--dark-mode contacts__title--right-side contacts__title">Контакты</h2>
+          <div class="contacts-wrapper">
+            <ul class="list contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link link" href="">
+                  <svg class="contacts__icon" width="24px" height="24px" transform="translate(1 4)">
+                    <use href="./images/icons/icons.svg#icon-map-pin"></use>
+                  </svg>
+                  ул. Васильковая, 7А, Киев, 08132</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link link" href="tel:+380441111111">
+                  <svg class="contacts__icon" width="24px" height="24px">
+                    <use href="./images/icons/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 044 111 11 11</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link link" href="mailto:barbershop@email.com">
+                  <svg class="contacts__icon" width="24px" height="24px">
+                    <use href="./images/icons/icons.svg#icon-mail"></use>
+                  </svg>
+                  barbershop@email.com</a>
+              </li>
+            </ul>
+            <div class="working-hours">
+              <h3 class="contacts__work-hours">время работы</h3>
+              <p>Ежедневно с 9:00 до 22:00</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -404,7 +409,6 @@
   <!-- подвал сайта -->
   <footer class="footer">
     <div class="container footer__container">
-      <p class="footer__copyright">&#169; Copyright 2020</p>
       <ul class="list socials footer__socials">
         <li class="socials__item"> <a class="link socials__link" href="https://www.instagram.com/" target="_blank"
             rel="noopener noreferrer">Instagram</a>
@@ -413,6 +417,7 @@
             rel="noopener noreferrer">YouTube</a>
         </li>
       </ul>
+      <p class="footer__copyright">&#169; Copyright 2020</p>
     </div>
   </footer>
 </body>

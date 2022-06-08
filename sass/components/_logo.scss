@@ -1,14 +1,21 @@
 /* LOGO */
 .logo {
-  margin-right: 71px;
-  color: var(--secondary-text-color);
+	color: var(--secondary-text-color);
 
-  &:hover,
-  &:focus {
-      color: var(--brand-color);
-    }
+	&:hover,
+	&:focus {
+		color: var(--brand-color);
+	}
+
+	@media screen and (min-width: 768px) {
+		margin-right: 64px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		margin-right: 71px;
+	}
 }
 
 .logo__icon {
-  fill: currentColor;
+	fill: currentColor;
 }

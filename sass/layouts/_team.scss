@@ -1,41 +1,62 @@
 /* TEAM SECTION */
 .team {
-  background-color: var(--bg-color);
+	background-color: var(--bg-color);
 }
 
 .team__title {
-  margin-bottom: 44px;
+	margin-bottom: 44px;
+}
+
+.member {
+	@media screen and (max-width: 1279px) {
+		display: block;
+	}
 }
 
 .member__item {
-  --items: 3;
-  // переназначить количество карточек
+	margin: 0 auto;
 
-  transform: scale(1);
-  transition: transform 250ms ease-in;
+	@media screen and (min-width: 768px) {
+		width: 450px;
 
-  &:hover {
-      transform: scale(1.1);
-    }
+		&:not(:last-child) {
+			margin-bottom: 64px;
+		}
+	}
+
+	@media screen and (min-width: 1280px) {
+		--items: 3;
+		// переназначить количество карточек
+	}
+
+	// transform: scale(1);
+	// transition: transform 250ms ease-in;
+
+	// &:hover {
+	// 	transform: scale(1.1);
+	// }
 }
 
 .member__img {
-  margin-bottom: 30px;
+	// пока не изменены картинки
+	width: 100%;
+
+	margin-bottom: 30px;
 }
 
 .member__title {
-  margin-bottom: 8px;
+	margin-bottom: 8px;
 
-  font-size: 18px;
-  line-height: 1.39;
-  text-align: center;
-  color: var(--secondary-text-color)
+	font-size: 18px;
+	line-height: 1.39;
+	text-align: center;
+	color: var(--secondary-text-color);
 }
 
 .member__position {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 
-  line-height: 1.36;
-  text-align: center;
-  color: var(--brand-color);
+	line-height: 1.36;
+	text-align: center;
+	color: var(--brand-color);
 }

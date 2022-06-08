@@ -7,10 +7,13 @@ body {
 	margin: 0;
 	color: var(--main-text-color);
 	background-color: var(--white-color);
+
 	font-family: var(--main-font), sans-serif;
-	font-size: 14px;
-	line-height: 1.86;
-	letter-spacing: 0.02em;
+
+	@include fonts(400, 14px, 26px, 0.02em);
+	// font-size: 14px;
+	// line-height: 1.86;
+	// letter-spacing: 0.02em;
 }
 
 .link {

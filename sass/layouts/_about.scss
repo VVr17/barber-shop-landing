@@ -1,25 +1,56 @@
 /* ABOUT */
 .about__container {
-  display: flex;
-  flex-wrap: wrap;
+	@media screen and (min-width: 768px) {
+		display: flex;
+	}
+
+	// @media screen and (min-width: 1280px) {
+	// 	flex-wrap: wrap;
+	// }
 }
 
 .about__list {
-  margin-right: 64px;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 768px) {
+		// проверить
+		display: block;
+		margin-right: 30px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		margin-right: 64px;
+	}
 }
 
 .about__item {
-  --items: 2;
+	@media screen and (min-width: 768px) and (max-width: 1280px) {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	@media screen and (min-width: 1280px) {
+		--items: 2;
+	}
 }
 
 .about__group {
-  width: 480px;
+	@media screen and (min-width: 768px) {
+		width: 330px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		width: 480px;
+	}
 }
 
 .about__subtitle {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .about__description {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
