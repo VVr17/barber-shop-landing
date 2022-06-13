@@ -1,11 +1,17 @@
 /* SOCIALS */
 .socials {
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: 768px) {
 		display: flex;
 	}
 }
 
 .hero__socials {
+	@media screen and (min-width: 768px) {
+		align-items: center;
+		transform-origin: left top;
+		transform: rotate(-90deg) translateY(35%) translateX(-170%);
+	}
+
 	@media screen and (min-width: 1280px) {
 		align-items: center;
 		transform-origin: left top;

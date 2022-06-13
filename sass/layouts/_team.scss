@@ -16,12 +16,14 @@
 .member__item {
 	margin: 0 auto;
 
-	@media screen and (min-width: 768px) {
-		width: 450px;
-
+	@media screen and (max-width: 1279.98px) {
 		&:not(:last-child) {
 			margin-bottom: 64px;
 		}
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 450px;
 	}
 
 	@media screen and (min-width: 1280px) {

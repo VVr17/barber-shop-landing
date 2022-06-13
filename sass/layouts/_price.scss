@@ -3,13 +3,30 @@
 	margin: auto;
 
 	background-color: var(--price-list-bg-color);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../images/price/bg-price-mobile.png);
+
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: url(../images/price/bg-price-mobile@2x.png);
+	}
+
+	@media screen and (min-width: 768px) {
+		background-image: url(../images/price/bg-price-tablet.png);
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url(../images/price/bg-price-tablet@2x.png);
+		}
+	}
 
 	@media screen and (min-width: 1280px) {
 		max-width: 1280px;
-		background-image: url(../images/price/bg-price.png);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
+		background-image: url(../images/price/bg-price-desktop.png);
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url(../images/price/bg-price-desktop.png);
+		}
 	}
 }
 
