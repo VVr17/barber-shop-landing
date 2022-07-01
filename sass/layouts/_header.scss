@@ -7,11 +7,7 @@
 	background-color: transparent;
 
 	// @media screen and (min-width: 768px) {
-	// 	position: absolute;
-	// 	top: 0;
 	// 	width: 100vw;
-	// 	z-index: 10;
-	// 	background-color: transparent;
 	// }
 }
 
@@ -22,6 +18,8 @@
 	@media screen and (min-width: 768px) {
 		display: flex;
 		align-items: center;
+		justify-content: end;
+		padding-top: 32px;
 	}
 }
 
@@ -31,7 +29,9 @@
 	}
 
 	@media screen and (min-width: 768px) {
-		margin-left: auto;
+		display: flex;
+		flex-direction: column-reverse;
+		// margin-left: auto;
 	}
 
 	@media screen and (min-width: 1280px) {
@@ -49,10 +49,14 @@
 	// padding-top: 40px;
 	// padding-bottom: 40px;
 	display: block;
-	margin-right: 40px;
+	// margin-right: 40px;
 
 	&:hover,
 	&:focus {
 		color: var(--brand-color);
 	}
+}
+
+.header__button {
+	margin-bottom: 20px;
 }

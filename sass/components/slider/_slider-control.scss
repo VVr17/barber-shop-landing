@@ -6,7 +6,7 @@
 .slider__btn {
 	position: absolute;
 	bottom: 40px;
-	right: 0;
+	right: 39px;
 
 	padding: 0;
 	width: 60px;
@@ -31,7 +31,7 @@
 
 	&--back {
 		text-align: left;
-		right: 26px;
+		right: 65px;
 		transform: translateX(-100%);
 	}
 }

@@ -15,10 +15,14 @@
 	}
 
 	@media screen and (min-width: 768px) {
-		background-image: url(../images/hero/slider-img-1-tablet-609.jpg);
-		min-height: 680px;
+		height: 680px;
 		max-width: 768px;
 		background-size: contain;
+		background-size: 609px 680px, contain;
+		background-image: url(../images/hero/slider-img-1-tablet-609.jpg),
+			linear-gradient(to right, var(--white-color) 22%, var(--hero-bg-color) 20%);
+		background-position: right;
+		background-repeat: no-repeat;
 
 		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 			background-image: url(../images/hero/slider-img-1-tablet@2x-1218.jpg);
@@ -55,6 +59,10 @@
 
 	@media screen and (min-width: 768px) {
 		display: flex;
+		padding-top: 270px;
+		padding-bottom: 240px;
+		padding-left: 80px;
+		margin-right: auto;
 	}
 }
 
@@ -79,14 +87,6 @@
 	display: block;
 	animation: fade-left-to-right 2s ease;
 
-	@media screen and (min-width: 768px) {
-		margin-bottom: 245px;
-		margin-top: 272px;
-		margin-left: 80px;
-		margin-right: auto;
-		// проверить - должны быть паддинги - перенести на контейнер
-	}
-
 	@media screen and (min-width: 1280px) {
 		margin-bottom: 206px;
 		// margin-top: 272px;
@@ -105,7 +105,7 @@
 	line-height: 1.17;
 	letter-spacing: 0.05em;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 1280px) {
 		font-size: 72px;
 		line-height: 1.18;
 	}
