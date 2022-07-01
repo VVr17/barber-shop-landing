@@ -1,4 +1,10 @@
 /* SLIDER-PAGINATION */
+.slider {
+	@media screen and (max-width: 767.98px) {
+		display: none;
+	}
+}
+
 .slider__pagination {
 	width: 18px;
 	position: absolute;

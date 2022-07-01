@@ -9,7 +9,7 @@
 	// line-height: 1.36;
 	// letter-spacing: 0.1em;
 	// text-transform: uppercase;
-	@include fonts(600, 11px, 1.36, 0.1em, uppercase);
+	@include fonts(600, 11px, 21px, 0.1em, uppercase);
 
 	&--dark-mode {
 		color: var(--secondary-bg-color);

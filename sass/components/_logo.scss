@@ -1,6 +1,10 @@
 /* LOGO */
 .logo {
-	color: var(--secondary-text-color);
+	color: var(--white-color);
+
+	@media sceen and (min-width: 768px) {
+		color: var(--secondary-text-color);
+	}
 
 	&:hover,
 	&:focus {

@@ -1,12 +1,12 @@
 /* HERO */
 .hero {
-	min-height: 580px;
+	height: 580px;
 	max-width: 480px;
 	margin: auto;
 	background-color: var(--hero-bg-color);
 
 	background-image: url(../images/hero/slider-img-1-mobile-480.jpg);
-	background-size: contain;
+	background-size: cover;
 	background-position: right;
 	background-repeat: no-repeat;
 
@@ -18,6 +18,7 @@
 		background-image: url(../images/hero/slider-img-1-tablet-609.jpg);
 		min-height: 680px;
 		max-width: 768px;
+		background-size: contain;
 
 		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 			background-image: url(../images/hero/slider-img-1-tablet@2x-1218.jpg);
@@ -46,12 +47,20 @@
 .hero__container {
 	position: relative;
 
+	@media screen and (max-width: 767.98px) {
+		padding-top: 208px;
+		padding-bottom: 183px;
+		padding-left: 31px;
+	}
+
 	@media screen and (min-width: 768px) {
 		display: flex;
 	}
 }
 
 .hero__left-side {
+	display: none;
+
 	@media screen and (min-width: 768px) {
 		display: flex;
 		align-items: flex-end;
@@ -75,7 +84,7 @@
 		margin-top: 272px;
 		margin-left: 80px;
 		margin-right: auto;
-		// проверить маржины
+		// проверить - должны быть паддинги - перенести на контейнер
 	}
 
 	@media screen and (min-width: 1280px) {
@@ -89,9 +98,15 @@
 .hero__title {
 	margin-bottom: 20px;
 	font-family: var(--secondary-font), sans-serif;
-	font-weight: 700;
-	font-size: 72px;
-	line-height: 1.18;
-	letter-spacing: 0.05em;
 	color: var(--white-color);
+	font-weight: 700;
+
+	font-size: 48px;
+	line-height: 1.17;
+	letter-spacing: 0.05em;
+
+	@media screen and (min-width: 768px) {
+		font-size: 72px;
+		line-height: 1.18;
+	}
 }

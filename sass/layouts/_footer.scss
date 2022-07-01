@@ -1,5 +1,7 @@
 /* Footer */
 .footer {
+	display: flex;
+	flex-direction: column;
 	// padding-top: 56px;
 	// padding-bottom: 56px;
 	background-color: var(--bg-color);

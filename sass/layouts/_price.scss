@@ -1,5 +1,6 @@
 /* PRICE */
 .price {
+	max-width: 480px;
 	margin: auto;
 
 	background-color: var(--price-list-bg-color);
@@ -47,6 +48,7 @@
 	background-image: linear-gradient(180deg, var(--price-list-gradient-first), var(--price-list-gradient-second));
 	margin-bottom: 50px;
 	text-align: left;
+	padding: 30px;
 
 	@media screen and (min-width: 1280px) {
 		perspective: 1000px;
@@ -55,7 +57,20 @@
 }
 
 .price__item {
-	@media screen and (max-width: 1179px) {
+	flex-basis: calc(100% / 2);
+
+	font-size: 14px;
+	line-height: 2.14;
+	letter-spacing: 0.02em;
+
+	color: var(--third-color);
+
+	@media screen and (min-width: 768px) {
+		font-size: 18px;
+		line-height: 1.67;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1179px) {
 		padding-left: 40px;
 		padding-right: 40px;
 		padding-top: 30px;
@@ -70,21 +85,13 @@
 			padding-top: 0;
 		}
 	}
-
-	// padding-left: 40px;
-	// padding-right: 40px;
-	// padding-top: 30px;
-	// padding-bottom: 30px;
-	flex-basis: calc(100% / 2);
-
-	font-size: 18px;
-	line-height: 1.67;
-	color: var(--third-color);
 }
 
 /* АНИМАЦИЯ */
 .price__item:first-child {
 	// background-image: linear-gradient(180deg, var(--price-list-gradient-first), var(--price-list-gradient-second));
+
+	padding-bottom: 20px;
 
 	transform: rotateY(0deg);
 	transition: transform 400ms ease-in;

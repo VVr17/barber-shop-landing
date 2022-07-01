@@ -1,6 +1,6 @@
 .mobile-menu-backdrop {
 	position: absolute;
-	z-index: 10;
+	z-index: 500;
 	top: 0;
 	right: 0;
 	left: 0;
@@ -16,13 +16,17 @@
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
+	transform: translateX(100%);
+	transition: opacity 250ms ease-in, visibility 250ms ease-in, transform 250ms ease-in;
+
+	overflow-y: scroll;
 
 	&--is-open {
 		visibility: visible;
 		opacity: 1;
 		pointer-events: all;
 
-		transform: translateY(0%);
+		transform: translateX(0%);
 	}
 
 	@media screen and (min-width: 768px) {
@@ -33,11 +37,11 @@
 .mobile-menu {
 	position: absolute;
 	background-color: white;
-	z-index: 10;
+	z-index: 400;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	width: 70%;
+	width: 80%;
 	padding: 130px 41px;
 }
 
@@ -52,6 +56,11 @@
 .mobile-menu__phone {
 	display: inline-block;
 	margin-bottom: 24px;
+
+	&:hover,
+	&:focus {
+		color: var(--brand-color);
+	}
 }
 
 .mobile-menu__link {
@@ -65,20 +74,13 @@
 	margin-bottom: 64px;
 }
 
-// .mobile-menu__socials {
-// 	justify-content: end;
-// }
-
 // проверить все
 
 .menu-btn {
 	position: absolute;
-	z-index: 100;
-	top: 0;
+	z-index: 1000;
+	top: 48px;
 	right: 0;
-	// right: 15px;
-	// top: 50%;
-	// transform: translateY(-50%);
 	padding: 0;
 	margin: 0;
 	width: 40px;
@@ -86,6 +88,7 @@
 
 	font-size: 0;
 	display: inline-block;
+	color: var(--white-color);
 
 	background-color: transparent;
 	cursor: pointer;
@@ -119,4 +122,21 @@
 
 .menu-btn--is-open .menu-btn__icon--menu {
 	display: none;
+}
+
+.mobile-menu__socials {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+.mobile-menu__socials-item:nth-child(1) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mobile-menu__socials-item:nth-child(2) {
+	align-self: center;
+	padding-left: 40px;
 }

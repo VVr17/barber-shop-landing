@@ -2,6 +2,7 @@
 .contacts {
 	display: block;
 	margin: auto;
+	max-width: 480px;
 
 	background-color: var(--contacts-bg-color);
 
@@ -26,7 +27,8 @@
 }
 
 .contacts__left-side {
-	margin-bottom: 84px;
+	// margin-bottom: 84px;
+	padding-bottom: 84px;
 
 	@media screen and (min-width: 1280px) {
 		width: 600px;
@@ -45,13 +47,15 @@
 }
 
 .contacts__right-side {
+	padding-top: 84px;
 	font-size: 18px;
 	line-height: 1.67;
 	letter-spacing: 0.02em;
 	color: var(--third-color);
 
-	// проверить размеры
-	// background-image: url(../images/contacts/Bg-contacts.png);
+	background-image: url(../images/contacts/bg-contacts-mobile.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 
 	@media screen and (min-width: 1280px) {
 		width: 570px;
