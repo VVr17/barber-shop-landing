@@ -5,10 +5,6 @@
 	width: 100%;
 	z-index: 10;
 	background-color: transparent;
-
-	// @media screen and (min-width: 768px) {
-	// 	width: 100vw;
-	// }
 }
 
 .header__container {
@@ -31,12 +27,13 @@
 	@media screen and (min-width: 768px) {
 		display: flex;
 		flex-direction: column-reverse;
-		// margin-left: auto;
 	}
 
 	@media screen and (min-width: 1280px) {
 		display: flex;
+		flex-direction: row;
 		align-items: center;
+		margin-left: auto;
 	}
 }
 
@@ -49,14 +46,19 @@
 	// padding-top: 40px;
 	// padding-bottom: 40px;
 	display: block;
-	// margin-right: 40px;
 
 	&:hover,
 	&:focus {
 		color: var(--brand-color);
 	}
+
+	@media screen and (min-width: 120px) {
+		margin-right: 40px;
+	}
 }
 
 .header__button {
-	margin-bottom: 20px;
+	@media screen and (min-width: 467.98px) and (max-width: 768px) {
+		margin-bottom: 20px;
+	}
 }

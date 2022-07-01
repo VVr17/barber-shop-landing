@@ -1,14 +1,10 @@
 .section {
 	padding-top: 84px;
 	padding-bottom: 84px;
-	// padding-left: 31px;
-	// padding-right: 31px;
 
 	@media screen and (min-width: 768px) {
 		padding-top: 100px;
 		padding-bottom: 100px;
-		// padding-left: 39px;
-		// padding-right: 39px;
 	}
 
 	@media screen and (min-width: 1280px) {
@@ -27,7 +23,7 @@
 	line-height: 1.18;
 	letter-spacing: 0.05em;
 
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: 768px) {
 		font-size: 42px;
 		line-height: 1.16;
 	}

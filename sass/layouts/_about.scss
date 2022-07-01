@@ -21,19 +21,22 @@
 	}
 
 	@media screen and (min-width: 1280px) {
+		display: flex;
 		margin-right: 64px;
 	}
 }
 
 .about__item {
-	@media screen and (min-width: 768px) and (max-width: 1280px) {
+	@media screen and (min-width: 768px) and (max-width: 1279.09px) {
 		&:not(:last-child) {
 			margin-bottom: 30px;
 		}
 	}
 
 	@media screen and (min-width: 1280px) {
-		--items: 2;
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
 	}
 }
 

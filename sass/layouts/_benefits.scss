@@ -2,8 +2,9 @@
 .benefits__container {
 	@media screen and (min-width: 1280px) {
 		display: flex;
-		flex-wrap: wrap;
+		// flex-wrap: wrap;
 		flex-direction: row-reverse;
+		justify-content: space-around;
 	}
 }
 
@@ -14,9 +15,9 @@
 	margin-left: auto;
 
 	@media screen and (min-width: 1280px) {
-		margin-right: 130px;
+		// margin-right: 130px;
 		width: 370px;
-		margin-left: 100px;
+		margin-left: 0;
 	}
 }
 
@@ -82,7 +83,7 @@
 	margin-bottom: 44px;
 
 	@media screen and (min-width: 768px) {
-		width: 465px;
+		width: 410px;
 	}
 
 	@media screen and (min-width: 1280px) {

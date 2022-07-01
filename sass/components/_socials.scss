@@ -9,13 +9,13 @@
 	@media screen and (min-width: 768px) {
 		align-items: center;
 		transform-origin: left top;
-		transform: rotate(-90deg) translateY(-70%) translateX(-90%);
+		// transform: rotate(-90deg) translateY(-46%) translateX(-90%);
 	}
 
 	@media screen and (min-width: 1280px) {
 		align-items: center;
 		transform-origin: left top;
-		transform: rotate(-90deg) translateY(35%);
+		transform: rotate(-90deg) translateY(-120%) translateX(5%);
 	}
 }
 

@@ -1,15 +1,23 @@
 /* Footer */
 .footer {
-	display: flex;
-	flex-direction: column;
-	// padding-top: 56px;
-	// padding-bottom: 56px;
 	background-color: var(--bg-color);
+
+	@media screen and (min-width: 768px) {
+		padding-top: 36px;
+		padding-bottom: 36px;
+	}
 }
 
-// .footer__container {
-// 	display: flex;
-// }
+.footer__container {
+	// display: flex;
+	// flex-direction: column;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
 
 .footer__copyright {
 	font-weight: 600;
