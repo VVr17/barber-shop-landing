@@ -6,6 +6,10 @@
 }
 
 .hero__socials {
+	// @media screen and (max-width: 767.98px) {
+	// 	display: none;
+	// }
+
 	@media screen and (min-width: 768px) {
 		align-items: center;
 		transform-origin: left top;

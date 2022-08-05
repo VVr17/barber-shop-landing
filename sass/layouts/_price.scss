@@ -60,11 +60,15 @@
 .price__item {
 	flex-basis: calc(100% / 2);
 
-	font-size: 14px;
+	font-size: 0.8em;
 	line-height: 2.14;
 	letter-spacing: 0.02em;
 
 	color: var(--third-color);
+
+	@media screen and (min-width: 425px) {
+		font-size: 14px;
+	}
 
 	@media screen and (min-width: 768px) {
 		font-size: 18px;
