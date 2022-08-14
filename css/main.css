@@ -969,14 +969,23 @@ body.modal-open {
 
 .benefits__item {
   display: block;
-  margin-right: 30px;
-  margin-bottom: 30px;
   padding: 20px 24px;
-  -ms-flex-preferred-size: calc((100% - 30px) / 2);
-      flex-basis: calc((100% - 30px) / 2);
   background-color: var(--bg-color);
   text-align: center;
   position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  -ms-flex-preferred-size: calc((100% - 20px) / 2);
+      flex-basis: calc((100% - 20px) / 2);
+}
+
+@media screen and (min-width: 320px) {
+  .benefits__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .benefits__item:last-child {
@@ -1405,6 +1414,12 @@ body.modal-open {
 @media screen and (min-width: 425px) {
   .price__item {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .price__item:first-child {
+    margin-bottom: 20px;
   }
 }
 
