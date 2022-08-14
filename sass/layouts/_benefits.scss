@@ -2,7 +2,6 @@
 .benefits__container {
 	@media screen and (min-width: 1280px) {
 		display: flex;
-		// flex-wrap: wrap;
 		flex-direction: row-reverse;
 		justify-content: space-around;
 	}
@@ -15,7 +14,6 @@
 	margin-left: auto;
 
 	@media screen and (min-width: 1280px) {
-		// margin-right: 130px;
 		width: 370px;
 		margin-left: 0;
 	}

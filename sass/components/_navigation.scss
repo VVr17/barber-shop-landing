@@ -17,10 +17,6 @@
 	}
 }
 
-// .navigation__list {
-// 	align-items: center;
-// }
-
 .navigation__item:not(:last-child) {
 	@media screen and (min-width: 768px) {
 		margin-right: 24px;

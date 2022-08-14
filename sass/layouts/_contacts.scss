@@ -13,14 +13,6 @@
 	@media screen and (min-width: 1280px) {
 		display: flex;
 		max-width: 1280px;
-		// height: 644px;
-
-		// background-image: url(../images/contacts/Bg-contacts.png);
-		// background-size: contain;
-		// background-repeat: no-repeat;
-		// background-position: top left calc(50% + 325px);
-
-		// высчитать середину секции через калк - привязать bg к середине
 	}
 }
 
@@ -40,8 +32,6 @@
 	}
 
 	@media screen and (min-width: 1280px) {
-		// display: flex;
-		// flex-wrap: wrap;
 		padding-left: 0px;
 		padding-right: 0px;
 	}
@@ -52,7 +42,6 @@
 		width: 655px;
 		padding-left: 55px;
 		padding-right: 40px;
-		// margin: 0 auto;
 	}
 }
 
