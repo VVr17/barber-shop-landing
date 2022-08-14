@@ -46,14 +46,22 @@
 }
 
 .price__list {
-	background-image: linear-gradient(180deg, var(--price-list-gradient-first), var(--price-list-gradient-second));
-	margin-bottom: 50px;
-	text-align: left;
-	padding: 30px;
+	@media screen and (max-width: 1199.98px) {
+		margin-bottom: 50px;
+		text-align: left;
+		padding: 30px;
+		background-image: linear-gradient(180deg, var(--price-list-gradient-first), var(--price-list-gradient-second));
+	}
 
 	@media screen and (min-width: 1280px) {
 		perspective: 1000px;
 		display: flex;
+	}
+}
+
+.price__inner-list {
+	@media screen and (min-width: 1280px) {
+		padding: 30px 40px;
 	}
 }
 
@@ -63,7 +71,6 @@
 	font-size: 0.8em;
 	line-height: 2.14;
 	letter-spacing: 0.02em;
-
 	color: var(--third-color);
 
 	@media screen and (min-width: 425px) {
@@ -93,9 +100,8 @@
 
 /* АНИМАЦИЯ */
 .price__item:first-child {
-	// background-image: linear-gradient(180deg, var(--price-list-gradient-first), var(--price-list-gradient-second));
-
 	@media screen and (min-width: 1280px) {
+		background-image: linear-gradient(180deg, var(--price-list-gradient-first), var(--price-list-gradient-second));
 		transform: rotateY(0deg);
 		transition: transform 400ms ease-in;
 
@@ -106,11 +112,10 @@
 }
 
 .price__item:last-child {
-	// background-image: linear-gradient(180deg, var(--price-list-gradient-third), var(--price-list-gradient-forth));
-
 	@media screen and (min-width: 1280px) {
 		transform: rotateY(0deg);
 		transition: transform 400ms ease-in;
+		background-image: linear-gradient(180deg, var(--price-list-gradient-third), var(--price-list-gradient-forth));
 
 		&:hover {
 			transform: rotateY(-15deg);

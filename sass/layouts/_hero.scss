@@ -31,6 +31,7 @@
 
 	@media screen and (min-width: 1280px) {
 		max-width: 1280px;
+		margin: auto;
 		background-size: 1125px 680px, 1125px 680px, 1125px 680px, 1125px 680px, contain;
 		background-image: url(../images/hero/slider-overlay.png), url(../images/hero/slider-img-1-desktop-1125.jpg),
 			url(../images/hero/slider-img-2.jpg), url(../images/hero/slider-img-3.jpg),
@@ -94,6 +95,10 @@
 	flex-grow: 1;
 	display: block;
 	animation: fade-left-to-right 2s ease;
+
+	@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+		margin-left: 100px;
+	}
 }
 
 .hero__title {

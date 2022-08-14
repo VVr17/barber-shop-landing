@@ -6,20 +6,20 @@
 }
 
 .hero__socials {
-	// @media screen and (max-width: 767.98px) {
-	// 	display: none;
-	// }
+	@media screen and (max-width: 767.98px) {
+		display: none;
+	}
 
 	@media screen and (min-width: 768px) {
 		align-items: center;
 		transform-origin: left top;
-		// transform: rotate(-90deg) translateY(-46%) translateX(-90%);
+		transform: rotate(-90deg) translateY(-50%) translateX(-90%);
 	}
 
 	@media screen and (min-width: 1280px) {
 		align-items: center;
 		transform-origin: left top;
-		transform: rotate(-90deg) translateY(-120%) translateX(5%);
+		transform: rotate(-90deg) translateY(-150%) translateX(-70%);
 	}
 }
 

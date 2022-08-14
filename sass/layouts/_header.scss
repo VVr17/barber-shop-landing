@@ -15,7 +15,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: end;
-		padding-top: 32px;
+		padding-top: 0;
 	}
 }
 
@@ -25,15 +25,14 @@
 	}
 
 	@media screen and (min-width: 768px) {
-		display: flex;
-		flex-direction: column-reverse;
+		display: block;
 	}
 
 	@media screen and (min-width: 1280px) {
 		display: flex;
-		flex-direction: row;
 		align-items: center;
 		margin-left: auto;
+		justify-content: center;
 	}
 }
 
@@ -43,8 +42,7 @@
 	line-height: 1.33;
 	letter-spacing: 0.1em;
 	color: var(--white-color);
-	// padding-top: 40px;
-	// padding-bottom: 40px;
+	padding-top: 20px;
 	display: block;
 
 	&:hover,
@@ -52,13 +50,21 @@
 		color: var(--brand-color);
 	}
 
-	@media screen and (min-width: 120px) {
+	@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+		position: absolute;
+		bottom: -8px;
+		right: 58px;
+	}
+
+	@media screen and (min-width: 1280px) {
 		margin-right: 40px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 
 .header__button {
-	@media screen and (min-width: 467.98px) and (max-width: 768px) {
-		margin-bottom: 20px;
-	}
+	// @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+	// 	margin-bottom: 20px;
+	// }
 }
